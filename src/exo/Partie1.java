@@ -8,7 +8,6 @@ import java.util.function.Predicate;
 
 public class Partie1 {
 
-    // Lambdas déclarées en variables
     Predicate<Trip> isLongTrip = trip -> trip.distanceKm() > 10;
     Predicate<Trip> isExpensiveTrip = trip -> trip.price() > 20;
     Predicate<Trip> isBadTrip = trip -> trip.rating() < 3;
