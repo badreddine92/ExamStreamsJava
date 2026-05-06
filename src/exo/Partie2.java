@@ -20,6 +20,7 @@ public class Partie2 {
                 .collect(Collectors.groupingBy(getCity, Collectors.counting()));
     }
 
+
     public Map<String, Double> revenueByDriver(List<Trip> trips) {
         return trips.stream()
                 .collect(Collectors.groupingBy(getDriverId,
